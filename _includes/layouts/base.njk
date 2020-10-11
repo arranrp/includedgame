@@ -77,6 +77,17 @@
 
     <main>
       <article>
+        <form name="chimps" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>   
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <button type="submit">Send</button>
+        </form>
+      </article>
+      <article>
         {% block article %}
           {{ content | safe }}
         {% endblock %}
